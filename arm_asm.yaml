@@ -8,7 +8,7 @@ detect:
 rules:
     ## Instructions
     # Load/store instructions
-    - statement: "\\b(?i)(ld[cmr]|ldr[bh]|st[cmr]|str[bh])(?-i)\\b"
+    - statement: "\\b(?i)(ld([cr]|mia)|ldr[bh]|st([cr]|mdb)|str[bh])(?-i)\\b"
     # Branch instructions
     - statement: "\\b(?i)(b|b(l|x|eq|ne|cs|cc|mi|pl|vs|vc|hi|ls|ge|lt|gt|le))(?-i)\\b"
     # Pseudo instructions
