@@ -1,0 +1,8 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-d": "ToggleDiffGutter",
+    "CtrlF": "FindLiteral",
+    "CtrlG": "FindNext",
+    "CtrlShiftG": "ToggleHelp",
+    "CtrlUnderscore": "lua:comment.comment"
+}
