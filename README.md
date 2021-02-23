@@ -10,7 +10,7 @@ My tools for using the [micro editor](https://micro-editor.github.io/) in CS 315
 
 If you want these settings, or just to use them to start, you can
 <pre><code>$ cd ~
-$ mkdir .config
-$ cd .config
+$ mkdir -p .config/micro
+$ cd .config/micro
 $ git clone git@github.com:phpeterson-usf/micro
 </code></pre>
