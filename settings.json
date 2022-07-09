@@ -1,4 +1,6 @@
 {
+    "autoclose": false,
     "clipboard": "internal",
+    "colorscheme": "simpler-light",
     "tabstospaces": true
 }
