@@ -2,8 +2,10 @@
 
 filetype: arm_asm
 
-detect:
-    filename: "\\.(S|s)$"
+# detect:
+    # filename: "\\.(S|s)$"
+    # This doesn't help because .s is stolen by built-in ft:asm
+    # header: "^@!.*/(env +)?armv7?$"
 
 rules:
     ## Instructions
