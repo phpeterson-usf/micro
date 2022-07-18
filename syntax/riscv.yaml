@@ -16,7 +16,7 @@ rules:
     # Shift
     - statement: "\\b(?i)(sl(l|li)|sr([al]|li|ai))(?-i)\\b"
     # Arithmetic
-    - statement: "\\b(?i)(add[i]?|sub|lui|auipc)(?-i)\\b"
+    - statement: "\\b(?i)(add[i]?|sub|lui|auipc|mv)(?-i)\\b"
     # Logical
     - statement: "\\b(?i)(xor[i]?|or[i]?|and[i]?)(?-i)\\b"
     # Compare
@@ -24,7 +24,7 @@ rules:
     # Branch
     - statement: "\\b(?i)(beq|bne|blt[u]?|bge[u]?)(?-i)\\b"
     # Jump & Link
-    - statement: "\\b(?i)(jal[r]?)(?-i)\\b"
+    - statement: "\\b(?i)(jal[r]?|ret|jr)(?-i)\\b"
     # Synch
     - statement: "\\b(?i)(fence(.i)?)(?-i)\\b"
     # System
