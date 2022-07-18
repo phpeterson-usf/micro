@@ -43,9 +43,7 @@ rules:
 
     ## Constant numbers
     # In immediates, with leading #
-    - constant.number: "#(0b[0-1]+|0x[0-9a-fA-F]+|[0-9]+)\\b" 
-    # In directives, without leading #
-    - constant.number: "\\b([0-9]+)\\b"
+    - constant.number: "\\b(0b[0-1]+|0x[0-9a-fA-F]+|[0-9]+)\\b" 
 
     ## Constant strings
     # Strings, using double quotes
