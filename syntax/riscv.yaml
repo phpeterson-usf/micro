@@ -24,14 +24,16 @@ rules:
     # Branch
     - statement: "\\b(?i)(beq|bne|blt[u]?|bge[u]?)(?-i)\\b"
     # Jump & Link
-    - statement: "\\b(?i)(jal[r]?|ret|jr)(?-i)\\b"
+    - statement: "\\b(?i)(jal[r]?)(?-i)\\b"
     # Synch
     - statement: "\\b(?i)(fence(.i)?)(?-i)\\b"
     # System
     - statement: "\\b(?i)(scall|sbreak)(?-i)\\b"
     # Counters
     - statement: "\\b(?i)(rdcycle[h]?|rdtime[h]?|rdinstret[h]?)(?-i)\\b"
-    
+    # Pseudo instructions
+    - statement: "\\b(?i)(j|jr|mv|ret)(?-i)\\b"
+
     ## Registers
     # Base register names
     - identifier: "\\b(?i)(x[0-9]|x1[0-9]|x2[0-9]|x3[01])(?-i)\\b"
@@ -42,7 +44,6 @@ rules:
     - statement: "\\b(?i)(mul(h|hsu|hu)?|div[u]?|rem[u]?)(?-i)\\b"
 
     ## Constant numbers
-    # In immediates, with leading #
     - constant.number: "\\b(0b[0-1]+|0x[0-9a-fA-F]+|[0-9]+)\\b" 
 
     ## Constant strings

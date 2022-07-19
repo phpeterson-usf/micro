@@ -10,10 +10,10 @@
 .variant_cc 
 .balign 
 main:
-    lb t0, sp, 0  # load a byte
-    lh t0, x5, 0  # load a halfword
-    lbu t0, x5, 0 # load byte unsigned
-    lhu t0, x5, 0 # load halfword unsigned
+    lb t0, sp, 0        # load a byte
+    lh t0, x5, 0x0F     # load a halfword
+    lbu t0, x5, 0b10    # load byte unsigned
+    lhu t0, x5, 0       # load halfword unsigned
 
     sb t0, x12, 0  # store byte
     sh t0, x20, 0  # store halfword
