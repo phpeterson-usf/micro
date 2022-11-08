@@ -32,7 +32,7 @@ rules:
     # Counters
     - statement: "\\b(?i)(rdcycle[h]?|rdtime[h]?|rdinstret[h]?)(?-i)\\b"
     # Pseudo instructions
-    - statement: "\\b(?i)(j|jr|li|mv|call|ret|bgt|ble)(?-i)\\b"
+    - statement: "\\b(?i)(j|jr|li|mv|call|ret|bgt|ble|unimp)(?-i)\\b"
 
     ## Registers
     # Base register names
