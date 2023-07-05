@@ -1,6 +1,7 @@
 {
     "Alt-/": "lua:comment.comment",
     "Alt-d": "ToggleDiffGutter",
+    "Ctrl-r": "lua:initlua.gorun",
     "CtrlF": "FindLiteral",
     "CtrlG": "FindNext",
     "CtrlShiftG": "ToggleHelp",

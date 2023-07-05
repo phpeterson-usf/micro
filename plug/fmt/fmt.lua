@@ -1,9 +1,9 @@
 local micro = import("micro")
 local shell = import("micro/shell")
 
-function rustfmt(bp)
+function fmt(bp, cmd)
 	bp:Save()
-	local _, err = shell.RunCommand("rustfmt " .. bp.Buf.Path)
+	local _, err = shell.RunCommand(cmd .. bp.Buf.Path)
 	if err ~= nil then
 		micro.InfoBar():Error(err)
 		return
@@ -12,8 +12,11 @@ function rustfmt(bp)
 end
 
 function onSave(bp)
-	if bp.Buf:FileType() == "rust" then
-		rustfmt(bp)
+    ft = bp.Buf:FileType()
+	if ft == "rust" then
+		fmt(bp, "rustfmt ")
+	elseif ft == "go" then
+	    fmt(bp, "go fmt ") 
 	end
 	return true
 end
