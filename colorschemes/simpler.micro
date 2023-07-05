@@ -23,4 +23,4 @@ color-link gutter-warning "red"
 color-link color-column "white"
 #Color shebangs the comment color
 color-link preproc.shebang "comment"
-color-link statusline "black,grey"
+color-link statusline "grey,black"
