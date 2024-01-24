@@ -17,8 +17,6 @@ function onSave(bp)
 		fmt(bp, "rustfmt ")
 	elseif ft == "go" then
 	    fmt(bp, "go fmt ") 
-	elseif ft == "c" then
-	    fmt(bp, "clang-format -i ")
 	end
 	return true
 end
