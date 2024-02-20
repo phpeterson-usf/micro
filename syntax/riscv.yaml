@@ -14,7 +14,7 @@ rules:
     # Load/store
     - statement: "\\b(?i)(l([bhwd]|bu|hu)|s[bhwd])(?-i)\\b"
     # Shift
-    - statement: "\\b(?i)(sl(l|li)|sr([al]|li|ai))(?-i)\\b"
+    - statement: "\\b(?i)(sl(l|li)|sr([al]|li|ai[w]))(?-i)\\b"
     # Arithmetic
     - statement: "\\b(?i)(add[i]?|sub|lui|auipc|mv)(?-i)\\b"
     # Logical
@@ -38,7 +38,7 @@ rules:
     # Base register names
     - identifier: "\\b(?i)(x[0-9]|x1[0-9]|x2[0-9]|x3[01])(?-i)\\b"
     # ABI register names
-    - identifier: "\\b(?i)(zero|ra|sp|gp|tp|a[0-7]|t[0-6])(?-i)\\b"
+    - identifier: "\\b(?i)(zero|ra|sp|gp|tp|a[0-7]|t[0-6]|s[0-9]|s1[0-1])(?-i)\\b"
 
     ## RVM Multiply/divide instructions
     - statement: "\\b(?i)(mul(h|hsu|hu)?|div[u]?|rem[u]?)(?-i)\\b"
